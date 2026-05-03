@@ -4,7 +4,7 @@ const campoBusca = document.getElementById("busca");
 let todosPokemons = [];
 
 const getPokemons = async () => {
-  const url = `https://pokeapi.co/api/v2/pokemon?limit=151`; // 1ª geração
+  const url = `https://pokeapi.co/api/v2/pokemon?limit=1.028`; // 1ª geração
   const res = await fetch(url);
   const data = await res.json();
   const pokemons = data.results;
